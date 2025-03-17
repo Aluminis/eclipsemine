@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "eclipsemine:block/ruby_block"
+    }
+  }
+}

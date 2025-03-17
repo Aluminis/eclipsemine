@@ -1,5 +1,10 @@
 package net.aluminis.eclipsemine;
 
+import com.google.inject.Guice;
+import com.google.inject.Inject;
+import com.google.inject.Injector;
+import net.aluminis.eclipsemine.module.CoreModule;
+import net.aluminis.eclipsemine.service.factory.ItemFactory;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -15,10 +20,7 @@ public class EclipseMineInitializer implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
-
-		LOGGER.info("Hello Fabric world!");
+		Injector injector = Guice.createInjector(new CoreModule());
+		injector.getInstance(ItemFactory.class);
 	}
 }

@@ -1,4 +1,4 @@
-package client.java.net.aluminis.eclipsemine.mixin.client;
+package net.aluminis.eclipsemine.mixin.client;
 
 import net.minecraft.client.MinecraftClient;
 import org.spongepowered.asm.mixin.Mixin;

@@ -16,10 +16,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.aluminis.eclipsemine.EclipseMine"
+			"net.aluminis.eclipsemine.EclipseMineInitializer"
 		],
 		"client": [
-			"net.aluminis.eclipsemine.EclipseMineClient"
+			"net.aluminis.eclipsemine.EclipseMineClientInitializer"
 		],
 		"fabric-datagen": [
 			"net.aluminis.eclipsemine.EclipseMineDataGenerator"

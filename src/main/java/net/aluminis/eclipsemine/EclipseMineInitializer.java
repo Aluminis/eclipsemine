@@ -1,11 +1,11 @@
-package main.java.net.aluminis.eclipsemine;
+package net.aluminis.eclipsemine;
 
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class EclipseMine implements ModInitializer {
+public class EclipseMineInitializer implements ModInitializer {
 	public static final String MOD_ID = "eclipsemine";
 
 	// This logger is used to write text to the console and the log file.

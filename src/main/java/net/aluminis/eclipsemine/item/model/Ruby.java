@@ -4,6 +4,6 @@ import net.minecraft.item.Item;
 
 public class Ruby extends AbstractItem {
     public Ruby() {
-        super("Ruby", new Settings().maxCount(1));
+        super("Ruby", new Settings().maxCount(64));
     }
 }

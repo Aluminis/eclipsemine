@@ -4,10 +4,14 @@ import com.google.inject.Provider;
 import net.aluminis.eclipsemine.item.model.AbstractItem;
 import net.aluminis.eclipsemine.item.model.Ruby;
 
-public class ItemsProvider implements Provider<AbstractItem[]> {
-    public AbstractItem[] get() {
-        return new AbstractItem[]{
-            new Ruby(),
-        };
+import java.util.Set;
+
+public class ItemsProvider implements Provider<Set<AbstractItem>> {
+    private Set<AbstractItem> items = Set.of(new AbstractItem[]{
+            new Ruby()
+    });
+
+    public Set<AbstractItem> get() {
+        return this.items;
     }
 }

@@ -1,5 +1,28 @@
 ---
 title: Aluminis Ultimine
 ---
-
 classDiagram
+
+note "Flow"
+Animal <|-- Duck
+note for Duck "can fly\ncan swim\ncan dive\ncan help in debugging"
+Animal <|-- Fish
+Animal <|-- Zebra
+Animal : +int age
+Animal : +String gender
+Animal: +isMammal()
+Animal: +mate()
+
+note for Assets "lol, fuck us right?"
+class resources{
+-assets.ecliplsemine
+}
+resources <|-- assets_ecliplsemine
+class assets_ecliplsemine{
+-int sizeInFeet
+-canEat()
+}
+class Zebra{
++bool is_wild
++run()
+}

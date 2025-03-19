@@ -2,7 +2,7 @@ package net.aluminis.eclipsemine.service.factory;
 
 import com.google.inject.Inject;
 import net.aluminis.eclipsemine.annotation.ModId;
-import net.aluminis.eclipsemine.item.model.AbstractItem;
+import net.aluminis.eclipsemine.model.item.AbstractItem;
 import net.aluminis.eclipsemine.service.provider.ItemsProvider;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;

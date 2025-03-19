@@ -1,4 +1,4 @@
-package net.aluminis.eclipsemine.item.model;
+package net.aluminis.eclipsemine.model.item;
 
 import net.minecraft.component.type.FoodComponent;
 import net.minecraft.item.Item;

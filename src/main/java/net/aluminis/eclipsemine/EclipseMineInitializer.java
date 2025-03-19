@@ -1,10 +1,10 @@
 package net.aluminis.eclipsemine;
 
 import com.google.inject.Guice;
-import com.google.inject.Inject;
 import com.google.inject.Injector;
 import net.aluminis.eclipsemine.module.CoreModule;
 import net.aluminis.eclipsemine.service.factory.ItemFactory;
+import net.aluminis.eclipsemine.service.factory.ListenerFactory;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -22,5 +22,6 @@ public class EclipseMineInitializer implements ModInitializer {
 	public void onInitialize() {
 		Injector injector = Guice.createInjector(new CoreModule());
 		injector.getInstance(ItemFactory.class);
+		injector.getInstance(ListenerFactory.class);
 	}
 }

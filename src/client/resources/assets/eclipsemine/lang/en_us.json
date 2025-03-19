@@ -1,3 +1,5 @@
 {
-  "item.eclipsemine.ruby": "Ruby"
+  "item.eclipsemine.ruby": "Ruby",
+  "category.eclipsemine": "EclipseMine",
+  "keybind.eclipsemine.veinmine": "Toggle Veinmining"
 }
